@@ -37,3 +37,20 @@ function closeFamilyForm() {
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
+
+document
+  .getElementById("addFamilyMember")
+  .addEventListener("click", addFamilyMember);
+
+function addFamilyMember() {
+  const type = document.getElementById("type").value;
+  const name = document.getElementById("name").value;
+
+  fetch("http://127.0.0.1:5000/add_family_member", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ type: type, name: name }),
+  });
+}
