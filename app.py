@@ -17,4 +17,4 @@ def add_family_member():
     return jsonify(family)
 
 if __name__ == '__main__':
-    app.route(debug=True)
+    app.run(debug=True)
