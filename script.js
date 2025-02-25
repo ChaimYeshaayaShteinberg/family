@@ -19,3 +19,21 @@ window.onload = function () {
       }
     });
 };
+
+document
+  .getElementById("openFamilyForm")
+  .addEventListener("click", openFamilyForm);
+
+function openFamilyForm() {
+  const popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
+
+document
+  .getElementById("closeFamilyForm")
+  .addEventListener("click", closeFamilyForm);
+
+function closeFamilyForm() {
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
