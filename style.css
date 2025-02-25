@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(211, 211, 211);
+  margin: 5%;
+  font-family: "Suez One", serif;
+  color: rgb(0, 0, 139);
+  text-align: right;
+  direction: rtl;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h3 {
+  display: none;
+}
+
+#familyTable {
+  display: none;
+  border-spacing: 0;
+}
+
+#familyTable th {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: rgb(0, 0, 139);
+  color: white;
+  font-weight: normal;
+}
+
+#familyTable td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+#familyTable tr:nth-child(even) {
+  background-color: rgb(255, 255, 255, 0.5);
+}
