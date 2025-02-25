@@ -17,6 +17,27 @@
       </tr>
     </table>
     <h3 id="emptyFamily">עדיין לא הוזן בני משפחה</h3>
-    <script src="script.js"></script>
+    <button id="openFamilyForm">הוסף בן משפחה</button>
+    <div id="popup">
+      <h2>הוסף בן משפחה</h2>
+      <form>
+        <label for="type">סוג בן משפחה</label>
+        <select name="type" id="type">
+          <option value="אבא">אבא</option>
+          <option value="אמא">אמא</option>
+          <option value="בן">בן</option>
+          <option value="בת">בת</option>
+        </select>
+        <br />
+        <br />
+        <label for="name">שם</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+        <button type="button" id="closeFamilyForm">ביטול</button>
+        <button type="submit" id="addFamilyMember">הוסף</button>
+      </form>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
