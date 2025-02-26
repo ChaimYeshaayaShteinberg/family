@@ -16,5 +16,9 @@ def add_family_member():
     family.append(data)
     return jsonify(family)
 
+@app.route('/del_family_member')
+def del_family_member():
+    ...
+
 if __name__ == '__main__':
     app.run(debug=True)
